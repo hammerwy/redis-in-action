@@ -192,8 +192,10 @@ public class ArticleRange {
 
     public static void main(String[] args) {
         ArticleRange articleRange = new ArticleRange();
-        //清除所有缓存
-        articleRange.connection.flushAll();
+        /**
+         * 清除所有缓存
+         */
+//        articleRange.connection.flushAll();
 
         String articleId = articleRange.postArticle("wy", "titleA", "http://www.google.com");
         System.out.println(articleId);
