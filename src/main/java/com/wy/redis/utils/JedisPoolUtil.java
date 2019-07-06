@@ -24,7 +24,7 @@ public class JedisPoolUtil {
     /**
      * 初始化连接池
      *
-     * @param configPath
+     * @param configPath 配置路径
      */
     public static void initPool(String configPath) {
         Properties properties = new Properties();
@@ -50,8 +50,6 @@ public class JedisPoolUtil {
 
     /**
      * 从连接池中获取一个连接
-     *
-     * @return
      */
     public static Jedis getConn() {
         return jedisPool.getResource();
